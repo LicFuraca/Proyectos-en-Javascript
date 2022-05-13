@@ -1,0 +1,162 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@500&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #F3F8FF;
+    padding: 0 1.5rem;
+}
+
+.grl-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3F8FF;
+}
+
+.title {
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.underline {
+    width: 50px;
+    border-bottom: 4px solid #5eafdf;
+    margin: 1rem auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 620px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: #5eafdf;
+    color: #fff;
+  }
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #5eafdf;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+
+.person {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.job {
+    text-transform: uppercase;
+    color: #5eafdf;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+}
+
+.person-p {
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-container {
+    width: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prev-btn {
+    margin-right: 1rem;
+    color: #5eafdf;
+    cursor: pointer;
+}
+
+.next-btn {
+    color: #5eafdf;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #F3F8FF;
+    color: #5eafdf;
+    border: 1px solid #5eafdf;
+    font-size: 0.75rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5eafdf;
+    color: #F3F8FF;
+    border-color: #F3F8FF;
+}
